@@ -1,0 +1,298 @@
+<!-- WOZU FINAL PROJECT -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+  <title>Create, Design Organize!</title>
+  <meta charset="utf-8">
+  <base href="/" />
+
+  <!-- SITE FONTS -->
+  <!-- Google APIs -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand|Handlee|Just+Another+Hand|Permanent+Marker|Rock+Salt|Shadows+Into+Light+Two|Montserrat|Yantramanav">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--./ SITE FONTS -->
+
+  <!-- APP STYLES -->
+  <!-- Bootstrap Core 4.0.0 -->
+  <link rel="stylesheet" href="/ngApp/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/ngApp/css/bootstrap.css">
+
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="/ngApp/css/mdb.min.css">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="/ngApp/css/lightbox2/dist/css/lightbox.css">
+
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://code.jquery.com//ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="/ngApp/css/animate.css">
+  <link rel="stylesheet" href="/ngApp/css/waypoints.css">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="/ngApp/css/site.css" />
+  <!-- ./APP STYLES -->
+
+</head>
+
+<body ng-cloak>
+  <a name="#top" id="ref"></a>
+
+  <!-- MAIN NAVIGATION -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light teal lighten-4">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-rocksalt" href="/main" title="Home" oncontextmenu="return disableRightClick();">
+        <img src="/ngApp/images/img-logo_CDO_noText.png" height="30" class="d-inline-block align-top" alt="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCreate, Design, Organize!
+      </a>
+      <!-- ./Navbar brand -->
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- ./Collapse button -->
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Nav List -->
+        <ul class="navbar-nav nav-handlee list-inline">
+          <li class="nav-item">
+            <!-- <a class="list-inline-item" style="font-size:large; color:black" href="/main">
+            <i class="fa fa-home mr-2"></i>Home |</a> -->
+            <a class="list-inline-item" style="font-size:large; color:black" href="/planners">
+              <i class="fa fa-calendar mr-2"></i>Planners |</a>
+            <a class="list-inline-item" style="font-size:large; color:black" href="/exercise">
+              <i class="fa fa-bicycle mr-2"></i>Exercise & Fitness |</a>
+            <a class="list-inline-item" style="font-size:large; color:black" href="/lifestyle">
+              <i class="fa fa-book mr-2"></i>Lifestyle |</a>
+            <a class="list-inline-item" style="font-size:large; color:black" href="/templates">
+              <i class="fas fa-calendar-alt mr-2"></i>Blank Pages</a>
+            <a class="list-inline-item" style="font-size:large; color:#B2DFDB" href="/grade">
+              <i class="fas fa-graduation-cap mr-2"></i>Grading Criteria</a>
+          </li>
+        </ul>
+        <!--./Nav List -->
+
+
+        <!-- Logout User -->
+        <ul class="navbar-nav nav-handlee float-right">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size:large; color:black" href="/login" onclick="return unloadUser()">
+              <i class="fas fa-sign-out-alt mr-lg-1"></i>Logout</a>
+          </li>
+        </ul>
+        <!-- ./Logout User -->
+      </div>
+      <!-- ./Collapsible content -->
+
+    </nav>
+  </header>
+  <!-- ./MAIN NAVGATION -->
+
+  <!-- ANGULAR SPA VIEWS -->
+  <ui-view></ui-view>
+  <!-- ./ANGULAR SPA VIEWS -->
+
+  <!-- Footer -->
+  <footer class="page-footer center-on-small-only teal lighten-4 pt-0">
+
+    <div style="background-color: #21d192;">
+      <div class="container">
+        <!--Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!--Grid column Left-->
+          <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
+            <h6 class="mb-0 white-text text-center text-md-left handlee" style="font-size: large">
+              <strong>Get connected with us on Facebook & Pinterest!</strong>
+            </h6>
+          </div>
+          <!--./Grid column Left-->
+
+          <!--Grid column Right-->
+          <div class="col-12 col-md-7 text-center text-md-right">
+            <!--Facebook-->
+            <a href="http://www.example.com" class="icons-sm fb-ic ml-0 handlee" title="CDO Facebook Page" target="_blank">
+              <i class="fab fa-facebook-square fa-2x white-text mr-lg-4"></i>
+            </a>
+            <!--Pinterest-->
+            <a href="http://www.example.com" class="icons-sm pin-ic handlee" title="CDO Pinterest Page" target="_blank">
+              <i class="fab fa-pinterest-square fa-2x white-text mr-lg-4"></i>
+            </a>
+            <!--Top of Page-->
+            <a href="#top" class="handlee" style="text-align: right" title="Top of Page">
+              <i class="fa fa-angle-up fa-2x ml-3"></i>
+            </a>
+          </div>
+          <!--./Grid column Right-->
+
+        </div>
+        <!--Grid row-->
+      </div>
+    </div>
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+      <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">
+          <h6 class="font-bold nav-rocksalt">
+            <strong>Create, Design, Organize!</strong>
+          </h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p class="handlee">
+            Your home for professionally designed pages you can insert or paste right into your existing personal bullet journal. We
+            offer a wide variety of pre-defined templates as well as blank grid paper in a variety of sizes to fit your every
+            need!
+          </p>
+        </div>
+        <!--./First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
+          <h6 class="title font-bold permanentmarker">
+            <strong>Related Products</strong>
+          </h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p class="handlee">
+            <i class="fas fa-book mr-3"></i>
+            <a href="https://www.papyrusonline.com/gifts/journals-and-notebooks" class="dark-grey-text" title="Papyrus Online" target="_blank">Journals</a>
+          </p>
+          <p class="handlee">
+            <i class="fa fa-book mr-3"></i>
+            <a href="https://www.amazon.com/slp/bullet-journal/qgn9783wjkj87ux" class="dark-grey-text" title="Amazon Supplies" target="_blank">Journal Supplies</a>
+          </p>
+          <p class="handlee">
+            <i class="fas fa-dot-circle mr-3"></i>
+            <a href="https://www.amazon.com/s/ref=nb_sb_ss_c_1_15?url=search-alias%3Daps&field-keywords=scrapbooking+adhesive&sprefix=scrapbooking+ad%2Caps%2C194&crid=3HW7V840XM0HV"
+              class="dark-grey-text" title="Page Adhesives" target="_blank">Adhesives</a>
+          </p>
+          <p class="handlee">
+            <i class="fas fa-dot-circle mr-3"></i>
+            <a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=washi+tape" class="dark-grey-text"
+              title="Fun Decorative Tapes" target="_blank">Washi-Tape</a>
+          </p>
+        </div>
+        <!--./Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
+          <h6 class="title font-bold permanentmarker">
+            <strong>Useful links</strong>
+          </h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p class="handlee">
+            <i class="fa fa-home mr-3"></i>
+            <a href="/main" class="dark-grey-text" title="Home">Home</a>
+          </p>
+          <p class="handlee">
+            <i class="fa fa-info mr-3"></i>
+            <a href="/about" class="dark-grey-text" title="About CDO">About Us</a>
+          </p>
+          <h6 class="title font-bold permanentmarker">
+            <strong>External Links</strong>
+          </h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p class="handlee">
+            <i class="fa fa-bolt mr-3"></i>
+            <a href="https://www.bulletjournal.com/" class="dark-grey-text" target="_blank" title="The Original">Orignal Bullet Journal</a>
+          </p>
+          <p class="handlee">
+            <i class="fas fa-question mr-3"></i>
+            <a href="https://www.wikihow.com/Bullet-Journal" class="dark-grey-text" target="_blank" title="How To">How To Bullet Journal</a>
+          </p>
+        </div>
+        <!--./Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
+          <h6 class="title font-bold permanentmarker">
+            <strong>Site Info</strong>
+          </h6>
+          <hr class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p class="handlee">
+            <i class="fa fa-map-marker mb-3 mr-3"></i>
+            <a href="https://goo.gl/maps/9sVSh2zaKK32" class="dark-grey-text" title="Google Map"> Peoria Arizona </a>
+          </p>
+          <h6 class="title font-bold permanentmarker">
+            <strong>Contact Us</strong>
+          </h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+          <p class="handlee">
+            <i class="fa fa-envelope mr-3"></i>
+            <a href="mailto:info@createdesignorganize.com?Subject=I%20Have%20a%20Question" class="dark-grey-text" title="Email Questions">
+              Questions </a>
+          </p>
+          <p class="handlee">
+            <i class="fa fa-envelope mr-3"></i>
+            <a href="mailto:pagerequests@createdesignorganize.com?Subject=I&#39m%20Looking%20for%20a%20Custom%20Page" class="dark-grey-text"
+              title="Email Requests"> Custom Page Request </a>
+          </p>
+        </div>
+        <!--./Fourth column-->
+
+      </div>
+    </div>
+    <!--./Footer Links-->
+
+    <!-- Copyright-->
+    <div class="footer-copyright">
+      <div class="container-fluid nav-rocksalt">
+        <a href="/main" title="Home"> © 2017
+          <strong>Create, Design, Organize!</strong>
+        </a>
+      </div>
+    </div>
+    <!--./Copyright -->
+
+  </footer>
+  <!--./Footer-->
+  <!-- ./MAIN NAVIGATION -->
+
+
+  <!-- SCRIPTS -->
+  <!-- Bootstrap 4.0.0 -->
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+  crossorigin="anonymous"></script> -->
+
+  <!-- Material Design Bootstrap -->
+  <script src="/ngApp/js/jquery-3.2.1.min.js"></script>
+  <script src="/ngApp/js/popper.min.js"></script>
+  <script src="/ngApp/js/bootstrap.min.js"></script>
+  <script src="/ngApp/js/mdb.min.js"></script>
+
+  <!-- Lightbox -->
+  <script src="/ngApp/css/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+
+  <!-- Animations -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="/ngApp/js/jquery.waypoints.min.js"></script>
+  <script src="/ngApp/js/waypoints.js"></script>
+
+
+
+  <!-- App Init -->
+  <script src="/ngApp/bundle.js"></script>
+
+  <!-- Controllers -->
+  <script src="/ngApp/controllers/siteController.js"></script>
+
+  <!-- Services -->
+
+  <!-- ./SCRIPTS -->
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<div class="container">
+    <section id="content">
+        <form action="">
+            <h1>Login Form</h1>
+            <p class="justanotherhand" style="color: red">{{controller.error}}</p>
+            <div>
+                <input type="text" placeholder="Username" required="yes" id="username" ng-model="controller.username" />
+            </div>
+            <div>
+                <input type="password" placeholder="Password" required="yes" id="password" ng-model="controller.password"/>
+                <div class="handlee" style="font-size:75%">Show Password
+                    <i class="fas fa-eye mr-3" onclick="showPass()"></i>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Log In" ng-click="controller.login()"/>
+                <a href="/register">Need an Account? (Register Here)</a>
+            </div>
+        </form>
+        <!-- form -->
+    </section>
+    <!-- content -->
+</div>
+<!-- container -->
